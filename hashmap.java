@@ -7,6 +7,5 @@ class hashex {
         temp.put("BBSR",50);
         temp.put("CTC",50);
         System.out.println(temp.get("BBSR"));
-
     }
 }
