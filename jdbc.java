@@ -7,7 +7,11 @@ class jdbc {
             String url = "jdbc:mysql://localhost:3306/sdi";
             String user = "root";
             String pass="";
-            DriverManager.getConnection(url, user, pass);
+            Connection con = DriverManager.getConnection(url, user, pass);
+            Statement stmt=con.createStatement();
+            String sql = "Insert into stu values(100,'paja')";
+            stmt.execute(sql);
+
             System.out.println("scccess");
         }
         catch(Exception e){
