@@ -1,6 +1,4 @@
 import java.util.*;
-
-
 class hashex {
     public static void main (String [] args){
         HashSet <String> set = new HashSet<>();
@@ -8,6 +6,5 @@ class hashex {
         set.add("python");
         set.add("java");
         System.out.println(set);
-
     }
 }
