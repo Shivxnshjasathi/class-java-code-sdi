@@ -38,9 +38,9 @@ class JDBCExample {
             System.out.println("Batch executed successfully");
             
             // Query for roll numbers greater than 10
-            String sql4 = "SELECT * FROM stu WHERE roll_no > 10";
+            String sql4 = "SELECT * FROM stu WHERE rool > 10";
             rs = stmt.executeQuery(sql4);
-            System.out.println("Records with roll number > 10:");
+            System.out.println("Records with rool > 10:");
             while (rs.next()) {
                 System.out.printf("%-10d %-20s%n", rs.getInt(1), rs.getString(2));
             }
